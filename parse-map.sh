@@ -4,7 +4,7 @@
 
 input=$1
 
-while IFS=, read col1 col2
+while IFS=', ' read col1 col2
 do
 	echo "$col1 $col2"
 done < $input
